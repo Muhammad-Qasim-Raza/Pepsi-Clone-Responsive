@@ -1,0 +1,418 @@
+@font-face {
+    font-family: sofia;
+    src: url(fonts/SofiaSansSemiCondensed-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: teko;
+    src: url(fonts/Teko/static/Teko-Bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar img {
+    width: 70px;
+    margin-left: 20px;
+}
+
+.navbar img:hover {
+    animation: heartBeat;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+.navbar {
+    z-index: 10;
+    background-color: #0025ff;
+    width: 100vw;
+    position: fixed;
+}
+
+.navbar-nav a {
+    color: #fff;
+    margin: 10px 20px;
+    font-family: sofia;
+    font-weight: bolder;
+}
+
+a i {
+    font-size: 10px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.nav-btn input {
+    border: 2px solid#fff;
+    border-radius: 20px;
+    margin: 0px 10px;
+    padding: 3px 30px 0px;
+    color: #fff;
+    background: transparent;
+    font-family: sofia;
+    font-weight: bolder;
+    margin-right: 50px;
+}
+
+.nav-btn input:hover {
+    color: #fff;
+    display: inline-block;
+    animation: heartBeat;
+    animation-duration: 1s;
+}
+
+.video video {
+    width: 100%;
+    margin-top: 95px;
+}
+
+.years {
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+    font-family: teko;
+}
+
+.years p {
+    line-height: 48px;
+}
+
+.years .h2 {
+    padding-top: 50px;
+    margin-top: -7px;
+    font-size: 70px;
+}
+
+.years .h3 {
+    width: auto;
+    margin: -13px 0;
+    font-size: 42px;
+
+}
+
+.years .h4 {
+    padding: 20px;
+    font-size: 52px;
+    margin: 0;
+}
+
+.h5,
+.h6 {
+    color: #0025ff;
+}
+
+.years .h5 {
+    font-size: 35px;
+    margin: 0;
+    margin-top: -35px;
+}
+
+.years .h6 span {
+    color: #fff;
+}
+
+.years .h6 {
+    font-size: 70px;
+    margin: 0;
+    padding-bottom: 25px;
+}
+
+.years button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.years button {
+    margin: 30px;
+    border: 1px solid #0025ff;
+    font-size: 52px;
+    padding: 5px 10px;
+    background-color: #0025ff;
+}
+
+.years img {
+
+    width: -webkit-fill-available;
+}
+
+.pic a {
+    position: relative;
+}
+
+.pic p {
+    padding: 10px 40px;
+    text-align: center;
+    font-size: 10px;
+    color: #fff;
+    background-color: #000;
+    position: absolute;
+}
+
+.video02 video {
+    width: 100%;
+}
+
+.pepsi-music {
+    background-image: url(https://www.pepsi.com/en-us/uploads/images/apple-music/background.png);
+    margin: -7px auto 0;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+.pepsi-pic02 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.pepsi-pic02 img {
+    width: 100%;
+    margin: 102px 15px 15px;
+}
+
+.pepsi-pic {
+    width: 50%;
+}
+
+.under-pic02 {
+    width: inherit;
+}
+
+.pepsi-pic>img {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.pepsi-pic02 input {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    border: 2px solid#fff;
+    border-radius: 20px;
+    padding: 3px 30px 0px;
+    color: #fff;
+    right: 20px;
+    background: transparent;
+    font-family: sofia;
+    font-weight: bolder;
+}
+
+.pepsi-pic02 p {
+    color: #fff;
+    font-size: 15px;
+    font-family: teko;
+    text-align: center;
+    width: auto;
+}
+
+.foot {
+    background-color: #000;
+    color: #0025ff;
+}
+
+.foot>h1 {
+    text-align: center;
+    padding-top: 45px;
+    font-size: 50px;
+    font-family: 'teko';
+    font-weight: bold;
+}
+
+.above-footer {
+    background-color: #000;
+    display: flex;
+    position: relative;
+    padding: 50px;
+}
+
+.above-footer .card {
+    border: none;
+    width: 16.666%;
+    height: 16.666%;
+}
+
+.above-footer .icon {
+    position: absolute;
+    width: 32px;
+    bottom: 20px;
+    left: 20px;
+}
+
+.footer {
+    background-color: #0025ff;
+    display: flex;
+    width: 100%;
+}
+
+.footer>div {
+    padding: 30px;
+    align-items: center;
+}
+
+.footer .pepsi-img {
+    width: 50%;
+    margin: 25px;
+}
+
+/* General styles */
+.under-footer a {
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+    font-size: 13px;
+    font-family: 'teko';
+    font-weight: bolder;
+}
+
+.under-footer li {
+    line-height: 23px;
+}
+
+/* Footer container styles */
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #0025ff;
+    padding: 20px;
+}
+
+/* Footer column styles */
+.under-footer {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+
+/* Adjustments for small screens */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .under-footer {
+        margin: 10px 0;
+    }
+}
+
+/* Social icons in the end column */
+.end img {
+    width: 30px;
+    margin: 10px;
+}
+.end li {
+    list-style: none;
+}
+.end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+/* Adjustments for small screens */
+@media (max-width: 768px) {
+    .end {
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width:991px) {
+
+    .navbar-nav a {
+        text-align: center;
+    }
+
+    .nav-btn {
+        text-align: center;
+        margin: 0px auto;
+    }
+
+    .img-two input {
+        text-align: center;
+        padding: 3px 100px 0px;
+    }
+
+    .pepsi-music {
+        height: 512px;
+    }
+
+    .music {
+        width: 548px;
+        margin: 0px auto;
+        justify-content: center;
+        height: 512px;
+        padding: 202px 50px 0px;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .img-one>img {
+        width: 500px;
+    }
+
+    .img-two>img {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .navbar-nav a {
+        text-align: center;
+    }
+
+    .nav-btn {
+        text-align: center;
+        margin: 0px auto;
+    }
+}
+
+@media screen and (max-width:372px) {
+
+    .navbar-nav a {
+        text-align: center;
+    }
+
+    .nav-btn input {
+        text-align: center;
+        margin: 0px 10px;
+        padding: 3px 30px 0px;
+    }
+
+    .years button a {
+        font-size: 40px;
+    }
+
+    .years .h2 {
+        font-size: 36px;
+        margin-bottom: 0px;
+    }
+
+    .years .h3 {
+        font-size: 30px;
+    }
+
+    .years .h4 {
+        font-size: 39px;
+    }
+
+    .years .h5 {
+        font-size: 30px;
+        padding-top: 12px;
+    }
+
+    .years .h6 {
+        font-size: 39px;
+    }
+
+
+}
